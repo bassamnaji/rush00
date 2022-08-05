@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   rush03.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bnaji <bnaji@student.42abudhabi.ae>        +#+  +:+       +#+        */
+/*   By: bnaji <bnaji@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 20:59:14 by bnaji             #+#    #+#             */
-/*   Updated: 2021/05/24 12:14:32 by bnaji            ###   ########.fr       */
+/*   Updated: 2022/08/05 13:22:41 by bnaji            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,17 +22,11 @@ void	print_in_line(char first, char last, char between, int x)
 	while (i <= x)
 	{
 		if (i == 1)
-		{
 			ft_putchar(first);
-		}
 		else if (i == x)
-		{
 			ft_putchar(last);
-		}
 		else
-		{
 			ft_putchar(between);
-		}
 		i++;
 	}
 }
@@ -45,17 +39,11 @@ void	print_lines(int x, int y)
 	while (j <= y)
 	{
 		if (j == 1)
-		{
 			print_in_line('A', 'C', 'B', x);
-		}
 		else if (j == y)
-		{
 			print_in_line('A', 'C', 'B', x);
-		}
 		else
-		{
 			print_in_line('B', 'B', ' ', x);
-		}
 		j++;
 		ft_putchar('\n');
 	}
@@ -64,13 +52,9 @@ void	print_lines(int x, int y)
 void	rush01(int x, int y)
 {
 	if (x <= 0 || y <= 0)
-	{
 		write(1, "ERROR: Invalid inputs\nInputs must be greater than zero", 54);
-	}
 	else
-	{
 		print_lines(x, y);
-	}
 }
 
 int		main(void);
