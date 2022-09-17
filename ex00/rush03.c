@@ -6,7 +6,7 @@
 /*   By: bnaji <bnaji@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 20:59:14 by bnaji             #+#    #+#             */
-/*   Updated: 2022/08/05 13:22:41 by bnaji            ###   ########.fr       */
+/*   Updated: 2022/09/17 14:19:47 by bnaji            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_putchar(char c);
 
 void	print_in_line(char first, char last, char between, int x)
 {
-	int i;
+	int	i;
 
 	i = 1;
 	while (i <= x)
@@ -33,7 +33,7 @@ void	print_in_line(char first, char last, char between, int x)
 
 void	print_lines(int x, int y)
 {
-	int j;
+	int	j;
 
 	j = 1;
 	while (j <= y)
@@ -49,7 +49,7 @@ void	print_lines(int x, int y)
 	}
 }
 
-void	rush01(int x, int y)
+void	rush(int x, int y)
 {
 	if (x <= 0 || y <= 0)
 		write(1, "ERROR: Invalid inputs\nInputs must be greater than zero", 54);
